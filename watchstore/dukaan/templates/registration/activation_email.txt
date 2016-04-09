@@ -1,0 +1,15 @@
+
+
+Hi,
+
+You've signed up for the account at {{ site.name }} .
+Please clikc on the below link to complete the Registration process and
+to activate your account.
+
+{{site.domain}}{% url 'registration_activate' activation_key %}
+
+
+The above activation link is valid for (( expiration_days }}.
+
+
+- The Dukaan Team

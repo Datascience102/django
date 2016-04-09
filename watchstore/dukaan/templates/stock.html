@@ -1,0 +1,19 @@
+<h1>{{ description | title }}</h1>
+<h1> This is returned as a list of all the objects from the Model Watch {{ total_count }}</h1>
+<h2> There are a total of  -->{{ count }} <-- Types of watch compniees </h2> <br><br>
+<h2> There are a total of Watches -->{{ totalcount }} <-- Types of watch compniees </h2><br>
+<h2> Out of which there are {{ Fossil  }} watches<br> <br>{{ second }}<br> <br>{{ third }} <br><br> {{ fourth }}</h2>
+<h3> The above counts are from Database, or precisely from a Model</h3>
+<h3> Total number of watches {{ total_count }}</h3>
+
+<br>
+<h2>Prices <br><br>{{ allcount }}</h2>
+
+
+<ul>
+
+{% for watch_price in allcount %}
+    <li>{{ watch_price }}</li>
+{% endfor %}
+
+</ul>
